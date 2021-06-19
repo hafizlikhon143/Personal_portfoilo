@@ -1,0 +1,564 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+
+    <title>Document</title>
+</head>
+<body class="rocket">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4" style="z-index: 2;">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">LIKHON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-grid ">
+                <a class="btn btn-outline-info   d-flex  fs-4" aria-current="page" href="#" style="border: 0px;"><i class="bi bi-house" style="padding-right: 5px;"></i>Home</a>
+              </li>
+              <li class="nav-item" style="padding-left: 10px;">
+                <a class="nav-link" id="navAboutBtn">About</a>
+              </li>
+              <li class="nav-item dropdown"style="padding-left: 10px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Social Media
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-facebook" style="font-size: 1.3rem; padding-right:2px;"></i>facebook</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-twitter" style="font-size: 1.3rem; padding-right:2px;"></i>twitter</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Vist Blog Post</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="container d-flex justify-content-end">
+                <a href="" class="btn btn-outline-success" id="contactBtn">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div id="mainContainer" style="z-index: -1;">
+      <div id="container_cont" class="Container_cont">
+        <div id="container1" >
+          <!-- part-1 Intro -->
+          <div id="part-1" class="animate" style="z-index: 1;">
+            <div class="container-fluid d-grid justify-content-center align-items-center" id="intro" style="z-index: 2;">
+              <div class="container" id="text-cont">
+                <div class="text-center text-light" style="font-size: 3rem;">Hi, I am</div>
+                <div class="text-center text-info" id="Bigtxt" >Nurul Hafiz Likhon</div>
+                <div class="text-center text-light" style="font-size: 3rem;">A</div>
+                <div class="text-center fs-2 text-light d-flex " style="text-align: center;width:fit-content; margin: auto;">
+                  <span class="" id="txt-slide">
+                    <div id="txt-slide-inner" class="text-success">
+                      <div>Web-designer</div>
+                      <div>Web-Developer</div>
+                      <div>Back-end Developer</div>
+                      <div>Front-end Developer</div>
+                      <div>Web-designer</div>
+                    </div>
+                  </span>
+                </div>
+                <div class="text-center text-light" style="font-size: 3rem;">Need a Website Order</div>
+                <div class="w-100% d-grid" style="margin-top:10px ;"><a href="https://www.fiverr.com/s2/f3d15747ca" class="btn btn-lg btn-success" style="margin: auto;z-index:1;">On Fiver</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- part-1 Intro End -->
+
+
+          <!-- particles.js -->
+          <div id="particles-js" style="position:fixed; top:0px; left:0px; width:100vw; height:100vh; z-index: -1;"></div>
+          <!-- particles.js END -->
+
+          <!-- Service part-2 -->
+          <div id="part-2" class="animate2">
+            <div class="container-fluid" id="survices">
+              <div id="surviceHeader" class="text-center text-primary"><div class="after"></div><img src="/static/img/rocket.png" alt="" id="animateImg" class="animateImg">Services</div>
+              <div class="container-md d-grid justify-content-center gx-5">
+                <div class="row">
+                  <div class="col col-lg-4">
+                    <div class="card bg-light" id="serviceCard" style="height:100%">
+                      <img src="/static/img/programming-code-signs.svg" class="card-img-top m-auto" alt="" style="width:280px;">
+                      <div class="card-body">
+                        <div id="textTitle" class="fs-2 text-center">Web Design</div>
+                        <p class="card-text">
+                          I can Design any kind of Website you need in Time.
+                          You Just Need to give me Enough Details
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-lg-4">
+                    <div class="card bg-light" id="serviceCard" style="height:100%">
+                      <img src="/static/img/television.svg" class="card-img-top m-auto" alt="..." style="width:280px;">
+                      <div class="card-body">
+                        <div id="textTitle" class="fs-3 text-center">Web Development</div>
+                        <p class="card-text">
+                          I can Make your Website user friendly so You don't have to suffer with Website Bugs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-lg-4">
+                    <div class="card bg-light" id="serviceCard" style="height:100%">
+                      <img src="/static/img/smartphone.svg" class="card-img-top m-auto" alt="..." style="width:280px;transform: rotate(-90deg);">
+                      <div class="card-body">
+                        <div class="fs-2 text-center" id="textTitle">Resposive Design</div>
+                        <p class="card-text">
+                          All The Website's I make are Resposive so you could use it on multiple Divices.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+          <!-- Service END -->
+          <!-- part-3 offers -->
+          <div id="part-3" class="animate" style="padding-top: 50px;">
+            <div id="offerHeader" class="text-center text-primary"><div class="after"></div><img src="/static/img/rocket.png" alt="" id="animateImg" class="animateImg">Offers</div>
+            <div class="row justify-content-center m-auto">
+              <!-- desc Offer Part -->
+              <div class="col col-6" id="descPart" >
+                <div class="container-fluid bg-light" >
+                  <div class="fs-1 text-primary">Offer Description</div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="texthead fs-3">Basic</div>
+                      <div class="textbody">
+                        The Basic Package is Only consist with 
+                        one page and Depending on the project page 
+                        can Increase. It will be simple an plain.
+                        and depending on price special function and 
+                        page can be added
+                      </div>
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                              Package Details
+                            </button>
+                          </h2>
+                          <div class="accordion-collapse collapse" id="collapse1">
+                            <div class="accordion-body">
+                              <!-- table -->
+                              <div class="container-sm">
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Package</span></div><div class="col"><span>Basic</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Price</span></div><div class="col"><span>Starts at: <span class="text-success">10$</span></span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Plugin</span></div><div class="col"><span>1</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Pages</span></div><div class="col"><span>1</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Service</span></div><div class="col"><span>No services</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Back End</span></div><div class="col"><span>Python Django</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Animations</span></div><div class="col"><span>None</span></div>
+                                </div>
+                              </div>
+                              <!-- table end -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" >
+                    <div class="col">
+                      <div class="texthead fs-3">Standerd</div>
+                      <div class="textbody">
+                        The Standerd Package is can have pages up 
+                        to 5 and any animation and plug-in can be
+                        added. Also Client will get a service warrenty
+                        for 6 month.
+                      </div>
+                      <div class="accordion" >
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                              Package Details
+                            </button>
+                          </h2>
+                          <div class="accordion-collapse collapse" id="collapse2">
+                            <div class="accordion-body">
+                              <!-- table -->
+                              <div class="container-sm">
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Package</span></div><div class="col"><span>Standerd</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Price</span></div><div class="col"><span>Starts at: <span class="text-success">100$</span></span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Plugin</span></div><div class="col"><span>4</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Pages</span></div><div class="col"><span>3-5</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Service</span></div><div class="col"><span>6 month</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Back End</span></div><div class="col"><span>Python Django</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Animations</span></div><div class="col"><span>2 of kind</span></div>
+                                </div>
+                              </div>
+                              <!-- table end -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="padding-bottom: 10px;">
+                    <div class="col">
+                      <div class="texthead fs-3">Premium</div>
+                      <div class="textbody">
+                        In premium package you can add as many page 
+                        you like you can also add extra functionality.
+                        I will make you page that suit's for you batter
+                        and I will make it resposive and user friendly.
+                      </div>
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                              Package Details
+                            </button>
+                          </h2>
+                          <div class="accordion-collapse collapse" id="collapse3">
+                            <div class="accordion-body">
+                              <!-- table -->
+                              <div class="container-sm">
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Package</span></div><div class="col"><span>Premimum</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Price</span></div><div class="col"><span>Starts at: <span class="text-success">220$</span></span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Plugin</span></div><div class="col"><span>As many Needed</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Pages</span></div><div class="col"><span>6 and More</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Service</span></div><div class="col"><span>1 year</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Back End</span></div><div class="col"><span>Python Django</span></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col"><span class="text-primary">Animations</span></div><div class="col"><span>As many You can get</span></div>
+                                </div>
+                              </div>
+                              <!-- table end -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- desc Offer Part End -->
+              <div class="col col-6" id="offerPart">
+                <div class="container-fluid">
+                  <div class="row" id="offerCard">
+                    <!-- card start -->
+                    <div class="card col" style="width: 100%;padding:0px;">
+                      <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#basicOffer">Basic</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab"  href="#standerdOffer">Standard</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-success" data-bs-toggle="tab"  href="#premiumOffer">Premium</a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <div class="card-body tab-content">
+                        <div id="basicOffer" role="tabpanel" class="tab-pane active">
+                          
+                          <div class="row">
+                            <div class="col col-8"><h5 class="card-title fs-3">Basic</h5></div>
+                            <div class="col col-4 fs-3 text-secondary">$10</div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-8 text-secondary">
+                              <p>
+                                1 Page Depending on content more webpage can be added and price will be charged based on how many
+                                more page has been added.No scroll animation Skip Responsive.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-12 text-dark"><i class="bi bi-clock-history"></i>2-3 Days</div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-12">
+                              <ul id="classList">
+                                <li> <i class="bi bi-check"></i> 1 Page</li>
+                                <li> <i class="bi bi-check"></i> Responsive Design</li>
+                                <li> <i class="bi bi-check"></i> Front End</li>
+                                <li> <i class="bi bi-check"></i> Back End</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Domain Connection</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Mail Functionality</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Animation</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Account System</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Extra Functionality</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary text-center" id="orderBbtn" style="margin: auto;justify-content: center;align-items: center;display: grid;">Order Basic</a>
+                        </div>
+                        <div id="standerdOffer" role="tabpanel" class="tab-pane">
+                          <div class="row">
+                            <div class="col col-8"><h5 class="card-title fs-3">Standard</h5></div>
+                            <div class="col col-4 fs-3 text-secondary">$120</div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-8 text-secondary">
+                              <p>
+                                3 Page Depending on content more webpage can be added and price will be charged based on how many
+                                more page has been added. Scroll Animation can be added an also Animation and User Fuctionality can
+                                be added.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-12 text-dark"><i class="bi bi-clock-history"></i>7-10 Days</div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-12">
+                              <ul id="classList">
+                                <li> <i class="bi bi-check"></i> 3+ Page</li>
+                                <li> <i class="bi bi-check"></i> Responsive Design</li>
+                                <li> <i class="bi bi-check"></i> Front End</li>
+                                <li> <i class="bi bi-check"></i> Back End</li>
+                                <li> <i class="bi bi-check"></i> Domain Connection</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Mail Functionality</li>
+                                <li> <i class="bi bi-check"></i> Animation</li>
+                                <li> <i class="bi bi-check"></i> Account System</li>
+                                <li class="text-secondary"> <i class="bi bi-check"></i> Extra Functionality</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary" id="orderSbtn" style="margin: auto;justify-content: center;align-items: center;display: grid;">Order Standerd</a>
+                        </div>
+                        <div id="premiumOffer" role="tabpanel" class="tab-pane">
+                          <div class="row">
+                            <div class="col col-8"><h5 class="card-title fs-3">Premium</h5></div>
+                            <div class="col col-4 fs-3 text-secondary">$250</div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-8 text-secondary">
+                              <p>
+                                5 Page Depending on content more webpage can be added and price will be charged based on how many
+                                more pages has been added. Scroll Animation can be added an also User Fuctionality can
+                                be added. I can also add some extra functionality If its requested. Website will be also work well 
+                                and Responsively across multiple platform. I will perform 1 year free service to that website.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-12 text-dark"><i class="bi bi-clock-history"></i>+10 Days(Depending on Project)</div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-12">
+                              <ul id="classList">
+                                <li> <i class="bi bi-check"></i> 5+ Page</li>
+                                <li> <i class="bi bi-check"></i> Responsive Design</li>
+                                <li> <i class="bi bi-check"></i> Front End</li>
+                                <li> <i class="bi bi-check"></i> Back End</li>
+                                <li> <i class="bi bi-check"></i> Domain Connection</li>
+                                <li> <i class="bi bi-check"></i> Mail Functionality</li>
+                                <li> <i class="bi bi-check"></i> Animation</li>
+                                <li> <i class="bi bi-check"></i> Account System</li>
+                                <li> <i class="bi bi-check"></i> Extra Functionality</li>
+                                <li> <i class="bi bi-check"></i> 1year Free service</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-success" id="orderPbtn" style="margin: auto;justify-content: center;align-items: center;display: grid;">Order Premium</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+        <!-- about me section -->
+        <div id="container2" >
+          <div id="part1" >
+            <div id="view" style=" padding-bottom:50px;">
+              <img src="/static/img/neptune_css.png" alt="" id="viewImg">
+              <label for="" class="fs-2 text-light" id="skillNameDiv">CSS</label>
+              <div class="progress" style="width: 90%; height: 20px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%;" id="skill_num">95%</div>
+              </div>
+              <p class="text-light fs-3">Here is My Skill Level <i class="bi bi-chevron-double-up"></i></i></p>
+            </div>
+            <div id="rotating_plate">
+                <div id="object"><img src="/static/img/worldwide.png" alt=""></div>
+                <div id="object"><img src="/static/img/jupiter_js.png" alt=""></div>
+                <div id="object"><img src="/static/img/neptune_css.png" alt=""></div>
+                <div id="object"><img src="/static/img/planethtml.png" alt=""></div>
+            </div>
+            <p class="fs-2 text-light" style="padding-top: 50px;">Small Skill That I Possess form This Wide Universe <i class="bi bi-emoji-laughing"></i></p>
+          </div>
+          <div id="part2" class="animate2">
+            <div class="container-fluid d-block" style="width: 100vw; height: 100vh;">
+              <div class="container px-4 p-4" >
+                <div class="row gx-5 justify-content-center" >
+                  <div class="col col-md-5" id="infoText">
+                   <div class="p-3 px-3 bg-light" style="height: 100%;">
+                     <div class="row gx-3 p-3 px-2 fs-4">
+                       <div class="col"><div class="border border-primary p-1 px-2">Name: <div class="text-primary">Nurul Hafiz Likhon</div></div></div>
+                       <div class="col col-md-3 col-auto d-flex"><div class=" border border-primary p-1 px-2" style="width: 100%;"> Age: <div class="text-primary" style="padding-right: 20px;">20</div></div></div>
+                     </div>
+                     <div class="row fs-5 p-2 px-2">
+                       <div class="col">
+                        <div class="border border-primary  px-2">Education Level: <div class="text-primary">Highschool Graduate</div></div>
+                       </div>
+                     </div>
+                     <div class="row fs-5 p-2 px-2 gy-3">
+                       <div class="col">
+                         <div class="border border-primary p-1 px-2">Mother Language: <div class="text-primary">Bangla</div></div>
+                       </div>
+                       <div class="col">
+                         <div class="border border-primary p-1 px-2 ">Other Language: <div class="text-primary">English(Intermidiate), Hindi(Fluent)</div></div>
+                        </div>
+                     </div>
+                     <div class="row fs-5 p-2 px-2 ">
+                       <div class="col">
+                        <div class="border border-primary p-1 px-2">Ocupation: <div class="text-primary">Student, Freelancer Webdeveloper</div></div>
+                       </div>
+                     </div>
+                     <div class="row fs-5 p-2 px-2 ">
+                       <div class="col">
+                         <div class="border border-primary p-1 px-2">
+                          Social Info: <div class="text-primary"><a href=""><i class="bi bi-facebook" style="font-size: 1.3rem; padding-right:2px;"></i>Facebook</a>, <a href=""><i class="bi bi-twitter" style="font-size: 1.3rem; padding-right:2px;"></i>Twitter</a>, <a href="https://www.linkedin.com/in/nurul-hafiz-likhon-991b09204/"><i class="bi bi-linkedin" style="font-size: 1.3rem; padding-right:2px;"></i>Linkedin</a></div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+                  <div class="col col-md-5" id="img_col" >
+                    <div class="p-3 bg-light" id="img_cont"><img src="/static/img/IMG_20201103_201442.png" id="img_protfolio" class="img-fluid" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary d-flex m-auto" style="margin-bottom: 50px!important;"><a href="https://www.linkedin.com/in/nurul-hafiz-likhon-991b09204/" class="text-light" style="text-decoration: none;">More In Linked</a><i class="bi bi-linkedin"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about me section end -->
+      <button class="btn btn-primary changeBtn" id="changeBtn">View More</button>
+    </div>
+    <!-- form section start -->
+    <div id="floatContainer">
+      <!-- order Form -->
+      <form action="home" method="post" class="container-sm bg-dark d-grid form-fluid" id="orderForm">
+        {% csrf_token %}
+        <div id="formHeader" class="m-auto fs-1 text-success">Start Project</div>
+        <div class="formItemCont"style="width: 100%; margin:auto">
+          <label for="" class="label">Package: </label><br>
+          {{form.package}}
+        </div>
+        <div class="formItemCont">
+          <label for="" class="label">Email: </label><br>
+          {{form.client_email}}
+        </div>
+        <div class="formItemCont">
+          <label for="" class="label">Project Name: </label><br>
+          {{form.project_name}}
+        </div>
+        <div class="formItemCont">
+          <label for="" class="label">Discription: </label><br>
+          {{form.project_desc}}
+        </div>
+        <input type="submit" class="btn btn-primary" value="Start Project">
+      </form>
+      <button type="button" class="btn-close btn-close-white" aria-label="Close" id="closeBtn1"></button>
+    </div>
+    <div id="floatContainer2">
+      <!-- contact form -->
+      <form action="" method="post" class="container-sm bg-dark d-grid form-fluid" id="contactForm">
+        {% csrf_token %}
+        <div id="contactHeader" class="m-auto fs-1 text-success">Email Me</div>
+        <div class="formItemCont">
+          <label for="" class="label">Email: </label><br>
+          {{form2.client_email}}
+        </div>
+        <div class="formItemCont">
+          <label for="" class="label">Subject: </label><br>
+          {{form2.client_subject}}
+        </div>
+        <div class="formItemCont">
+          <label for="" class="label">Content: </label><br>
+          {{form2.client_letter}}
+        </div>
+        <input type="submit" class="btn btn-primary" value="Send Email">
+      </form>
+      <button type="button" class="btn-close btn-close-white" aria-label="Close" id="closeBtn2"></button>
+    </div>
+    <footer id="mainFooter"><span id="copyright" class="text-light m-auto">&copy; Copyright 2021 All Right reserved by Nurul Hafiz Likhon</span></footer>
+    <script src="/static/particles.js-master/particles.js"></script>
+    <script src="/static/particles.js-master/particles.min.js"></script>
+    <script src="/static/particles.js-master/demo/js/app.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- <script src="/static/js/mouse.js"></script> -->
+<!-- <script src="/static/js/posChange.js"></script>
+<script src="/static/js/solerModel.js"></script>
+<script src="/static/js/animate.js"></script>
+<script src="/static/js/main.js"></script> -->
+<script>
+  var scripts = ["/static/js/mouse.js", "/static/js/posChange.js", "/static/js/solerModel.js","/static/js/animate.js",  "/static/js/main.js"]
+
+  function loadScreen(scriptSrc){
+    window.addEventListener("load", ()=>{
+      var script = document.createElement("script");
+      script.src = scriptSrc;
+      document.body.appendChild(script);
+    })
+  }
+  for(i=0; i<scripts.length; i++){
+    loadScreen(scripts[i])
+  }
+</script>
+
+</body>
+</html>
